@@ -9,14 +9,8 @@ Aromatizapp is an experiment that explores having an aromatizer connected to the
 
 ## Features
 
-Exposes and endpoint which can be called in the following form:
+- Exposes and endpoint which triggers the _aromatization_ servo-mechanism 😛
 
-```bash
-curl --location --request POST "https://api.particle.io/v1/devices/${device_id}/aromatize" \
---header "Authorization: Bearer ${token}" \
---header 'Content-Type: application/x-www-form-urlencoded' \
---data-urlencode 'arg=aromatize'
-```
 
 ## Scripts
 
