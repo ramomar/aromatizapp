@@ -1,6 +1,8 @@
 # Aromatizapp
 
-Aromatizapp is an experiment that explores having an aromatizer connected to the internet!
+<img width="507" alt="Captura de Pantalla 2021-11-07 a la(s) 15 42 43" src="https://user-images.githubusercontent.com/10622989/140662899-a6a0ac63-cd75-4ff9-ada4-47f264992088.png">
+
+Aromatizapp is an experiment that explores having an aromatizer connected to the internet! You can read a nice blog post [here]() (spanish).
 
 ## Features
 
@@ -23,6 +25,4 @@ The scripts folder includes scripts for calling the aromatize endpoint as well a
 [Use the Particle tooling](https://docs.particle.io/tutorials/developer-tools/workbench/).
 
 ## Demo video
-
-<div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/643280797?h=dcc6457b38" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p><a href="https://vimeo.com/643280797">Demo - Aromatizapp</a> from <a href="https://vimeo.com/user63369211">Eduardo Garza</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
+You can see a demo [here](https://vimeo.com/643280797).
