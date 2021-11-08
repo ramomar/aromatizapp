@@ -4,7 +4,7 @@
   <img width="402" alt="aromatizapp" src="https://user-images.githubusercontent.com/10622989/140662899-a6a0ac63-cd75-4ff9-ada4-47f264992088.png">
 </p>
 
-Aromatizapp is an experiment that explores having an aromatizer connected to the internet! You can read a nice blog post [here](https://ramomar.medium.com/aromatizapp-ac97e8b730a8)(spanish).
+Aromatizapp is an experiment that explores having an aromatizer connected to the internet! You can read a nice blog post [here](https://ramomar.medium.com/aromatizapp-ac97e8b730a8) (spanish).
 
 ## Features
 
