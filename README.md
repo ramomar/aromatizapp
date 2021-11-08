@@ -15,7 +15,11 @@ Aromatizapp is an experiment that explores having an aromatizer connected to the
 
 ## Scripts
 
-The scripts folder includes scripts for calling the aromatize endpoint as well as the endpoint for generating an access token.
+Scripts for triggering the _aromatization_ servo-mechanism and for generating an access token.
+
+## Schematics
+
+EAGLE schematic I used in order to make the diagram I show in [my post](https://ramomar.medium.com/aromatizapp-ac97e8b730a8).
 
 
 ## Building and flashing the firmware
