@@ -20,7 +20,7 @@ The scripts folder includes scripts for calling the aromatize endpoint as well a
 
 ## Building and flashing the firmware
 
-[Use the Particle tooling](https://docs.particle.io/tutorials/developer-tools/workbench/). Rememer to correctly set the target to whichever device you are using. In this case, I used a [Particle Argon](https://docs.particle.io/argon/).
+[Use the Particle tooling](https://docs.particle.io/tutorials/developer-tools/workbench/). Rememer to set correctly the target to whichever device you are using. In this case, I used a [Particle Argon](https://docs.particle.io/argon/).
 
 ## Demo video
 You can see a demo [here](https://vimeo.com/643280797).
