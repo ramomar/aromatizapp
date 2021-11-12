@@ -16,7 +16,6 @@ int aromatize(String command) {
     digitalWrite(controlPin, LOW);
     return 1;
   }
-  else {
-    return -1;
-  }
+
+  return -1;
 }
