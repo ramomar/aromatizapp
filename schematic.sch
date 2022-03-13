@@ -501,6 +501,38 @@ Footprint and formfactor based on &lt;a href="https://www.adafruit.com/feather"&
 </deviceset>
 </devicesets>
 </library>
+<library name="docu-dummy" urn="urn:adsk.eagle:library:215">
+<description>Dummy symbols</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="RESISTOR" urn="urn:adsk.eagle:symbol:13162/1" library_version="3">
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="R" urn="urn:adsk.eagle:component:13171/1" prefix="R" library_version="3">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -537,6 +569,7 @@ Footprint and formfactor based on &lt;a href="https://www.adafruit.com/feather"&
 <part name="T1" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="2N2222" device="" package3d_urn="urn:adsk.eagle:package:28526/2"/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R1" library="docu-dummy" library_urn="urn:adsk.eagle:library:215" deviceset="R" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -551,25 +584,19 @@ Footprint and formfactor based on &lt;a href="https://www.adafruit.com/feather"&
 <instance part="U1" gate="U1" x="38.1" y="83.82" smashed="yes">
 <attribute name="NAME" x="27.94" y="59.69" size="1.4224" layer="95" align="top-left"/>
 </instance>
-<instance part="T1" gate="G$1" x="81.28" y="81.28" smashed="yes">
-<attribute name="NAME" x="71.12" y="88.9" size="1.778" layer="95"/>
-<attribute name="VALUE" x="71.12" y="86.36" size="1.778" layer="96"/>
+<instance part="T1" gate="G$1" x="83.82" y="81.28" smashed="yes">
+<attribute name="NAME" x="73.66" y="88.9" size="1.778" layer="95"/>
+<attribute name="VALUE" x="73.66" y="86.36" size="1.778" layer="96"/>
 </instance>
 <instance part="X_1" gate="G$1" x="73.66" y="33.02" smashed="yes"/>
 <instance part="+3V1" gate="G$1" x="15.24" y="119.38" smashed="yes">
 <attribute name="VALUE" x="12.7" y="114.3" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="R1" gate="G$1" x="66.04" y="81.28" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$3" class="0">
-<segment>
-<pinref part="T1" gate="G$1" pin="B"/>
-<pinref part="U1" gate="U1" pin="D7"/>
-<wire x1="78.74" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="AROMGND" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="GND"/>
@@ -588,7 +615,7 @@ Footprint and formfactor based on &lt;a href="https://www.adafruit.com/feather"&
 <net name="AROM-" class="0">
 <segment>
 <pinref part="T1" gate="G$1" pin="E"/>
-<wire x1="83.82" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
 <junction x="106.68" y="76.2"/>
 <label x="109.22" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -596,7 +623,7 @@ Footprint and formfactor based on &lt;a href="https://www.adafruit.com/feather"&
 <net name="AROM+" class="0">
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
-<wire x1="83.82" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
 <junction x="106.68" y="86.36"/>
 <label x="109.22" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -607,6 +634,18 @@ Footprint and formfactor based on &lt;a href="https://www.adafruit.com/feather"&
 <pinref part="U1" gate="U1" pin="3V3"/>
 <wire x1="15.24" y1="116.84" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="99.06" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="D7"/>
+<wire x1="50.8" y1="81.28" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="T1" gate="G$1" pin="B"/>
+<wire x1="71.12" y1="81.28" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
